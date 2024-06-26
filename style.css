@@ -1,0 +1,316 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  overflow: hidden;
+  user-select: none;
+}
+
+.jacksonColor {
+  background: linear-gradient(
+    275deg,
+    #ff0d00,
+    #ff7e00,
+    #f9ff00,
+    #3aff00,
+    #0076ff,
+    #6000ff,
+    #dc00ff,
+    #ff2f00,
+    #ffa000,
+    #fffa00,
+    #50ff00,
+    #0098ff,
+    #0005ff,
+    #ff00ea
+  );
+  background-size: 2800% 2800%;
+
+  -webkit-animation: jacksonColor 10s ease infinite;
+  -moz-animation: jacksonColor 10s ease infinite;
+  -o-animation: jacksonColor 10s ease infinite;
+  animation: jacksonColor 10s ease infinite;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+@-webkit-keyframes jacksonColor {
+  0% {
+    background-position: 0% 61%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 61%;
+  }
+}
+@-moz-keyframes jacksonColor {
+  0% {
+    background-position: 0% 61%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 61%;
+  }
+}
+@-o-keyframes jacksonColor {
+  0% {
+    background-position: 0% 61%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 61%;
+  }
+}
+@keyframes jacksonColor {
+  0% {
+    background-position: 0% 61%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 61%;
+  }
+}
+
+#h1 {
+  font-family: "Mouse Memoirs", sans-serif;
+
+  text-align: center;
+
+  font-size: 12rem;
+  color: white;
+  text-shadow: 2rem 2rem 4rem #000000;
+  position: fixe;
+  top: 10rem;
+}
+
+.button {
+  display: inline-block;
+  position: absolute;
+  height: 35rem;
+  width: 35rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-image: url(./assets/michael.jpg);
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 0.9rem #333;
+}
+
+.black {
+  display: inline-block;
+  position: absolute;
+  height: 35rem;
+  width: 35rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-image: url(./assets/michael.jpg);
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 0.9rem #333;
+
+  transition: 0.2s ease;
+}
+
+.white {
+  display: inline-block;
+  position: absolute;
+  height: 35rem;
+  width: 35rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-image: url(./assets/michael\ white.png);
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 0.9rem #333;
+
+  transition: 0.2s ease;
+}
+.black:active {
+  box-shadow: 0 0.2rem #111;
+  transform: translateY(1rem);
+}
+
+.white:active {
+  box-shadow: 0 0.2em #111;
+  transform: translateY(1rem);
+}
+
+.button:active {
+  box-shadow: 0 0.5rem #111;
+  transform: translateY(1rem);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50rem;
+  margin: auto;
+  width: 120rem;
+  height: 50rem;
+}
+
+.buttons {
+  color: white;
+  display: flex;
+
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: flex-start;
+  margin-top: 0rem;
+}
+
+.play {
+  width: 10vh;
+  height: 10vh;
+
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4rem;
+
+  text-shadow: 0.2em 0.4em 0.5em rgb(21, 20, 20);
+}
+
+.stop {
+  width: 10vh;
+  height: 10vh;
+
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4rem;
+
+  text-shadow: 0.2em 0.4em 0.5em rgb(21, 20, 20);
+}
+.stop:active {
+  transform: translateY(1rem);
+}
+
+.play:active {
+  transform: translateY(1rem);
+}
+
+.moonwalker {
+  width: 10rem;
+  height: 10rem;
+  justify-content: end;
+  right: -400vw;
+  visibility: hidden;
+  margin-bottom: 0;
+}
+
+.moonwalkeranimated {
+  width: 20rem;
+  height: 30rem;
+  animation: pipe-animation 10.05s infinite linear;
+  position: absolute;
+  right: -40rem;
+  bottom: 0;
+  animation-play-state: running;
+  visibility: visible;
+  cursor: pointer;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -50vw;
+  }
+
+  to {
+    right: 130%;
+  }
+}
+
+.dance {
+  width: 35rem;
+  height: 35rem;
+  visibility: hidden;
+  cursor: pointer;
+  margin-top: -20rem;
+}
+
+.dance2 {
+  width: 35rem;
+  height: 35rem;
+  visibility: hidden;
+  cursor: pointer;
+  margin-top: -20rem;
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 4px;
+  }
+  .container {
+    margin-top: 20vh;
+  }
+}
